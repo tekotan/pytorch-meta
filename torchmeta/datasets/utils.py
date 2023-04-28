@@ -36,8 +36,6 @@ def get_asset(*args, dtype=None):
 # The following functions are taken from
 # https://github.com/pytorch/vision/blob/cd0268cd408d19d91f870e36fdffd031085abe13/torchvision/datasets/utils.py
 
-from torchvision.datasets.utils import _get_confirm_token, _save_response_content
-
 def _quota_exceeded(response: "requests.models.Response"):
     return False
     # See https://github.com/pytorch/vision/issues/2992 for details
